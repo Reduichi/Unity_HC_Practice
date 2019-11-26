@@ -1410,6 +1410,7 @@ GameObject:
   - component: {fileID: 2075620961}
   - component: {fileID: 2075620962}
   - component: {fileID: 2075620963}
+  - component: {fileID: 2075620964}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u8173\u672C"
   m_TagString: Untagged
@@ -1458,7 +1459,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075620958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d67828f5c5f3bf4a82f23531ba38fa3, type: 3}
   m_Name: 
@@ -1470,7 +1471,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075620958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41cfa059a5ab5304f9ba9150743a1559, type: 3}
   m_Name: 
@@ -1482,11 +1483,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075620958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43ad82ed8e9282548b0bf9dbe7d45e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tranA: {fileID: 1702838015}
+  tranB: {fileID: 1702838015}
+  spriteA: {fileID: 1702838014}
+--- !u!114 &2075620964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075620958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53987d1aa3849cb4ca0a286ca9c1f468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 10
+  b: 3
+  c: 9
+  d: 1
 --- !u!1 &2130849543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fa5079e4809e64cae17e9a58d77b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10.5
+  speed: 1.5
+  move: {fileID: 2130849545}
 --- !u!61 &2130849547
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         // Object.Instantiate(pipe);
 
         // 浮點數 = 隨機.靜態方法(最小，最大)
-        float y = Random.Range(-0.6f , 0.56f);
+        float y = Random.Range(-0.9f , 0.9f);
 
         // 三維向量 Vector3 - x,y,z
         Vector3 pos = new Vector3(4.5f , y , 0);
@@ -57,6 +57,6 @@ public class GameManager : MonoBehaviour
     {
         // SpawnPipe();
         // 重複延遲物件生產時間
-        InvokeRepeating("SpawnPipe", 0, 1.5f);
+        InvokeRepeating("SpawnPipe", 0, 3.5f);
     }
 }
