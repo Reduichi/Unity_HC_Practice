@@ -4,6 +4,8 @@ public class LearnOperator : MonoBehaviour
 {
     public int a = 10, b = 3;
     public int c = 9, d = 1;
+    public int apple = 5 , key = 2;
+    public int coin = 3, bomb = 1;
 
     private void Start()
     {
@@ -31,5 +33,33 @@ public class LearnOperator : MonoBehaviour
         print(c <= d);    // F
         print(c == d);    // F
         print(c != d);    // T
+
+        // 邏輯運算子
+        // 結果是布林植
+        // 並且 &&
+        // 規則 : 只要有一個 false 就會傳回 false
+        print(true && true);      // T
+        print(true && false);     // F
+        print(false && true);     // F
+        print(false && false);    // F
+
+        // 或者 ||
+        // 規則 : 只要有一個 false 就會傳回 false
+        print(true || true);      // T
+        print(true || false);     // T
+        print(false || true);     // T
+        print(false || false);    // F
+
+        // 相反(顛倒)
+        // 作用 : 將布林植變相反
+        print(!true);
+        print(!false);
+
+        // 任務 : 取得十個蘋果與五個金幣
+        print(apple >= 10 && coin >= 5);
+
+        // 任務 : 取得一個鑰匙或者兩個炸彈
+        print(key >= 1 || bomb >= 2);
+
     }
 }

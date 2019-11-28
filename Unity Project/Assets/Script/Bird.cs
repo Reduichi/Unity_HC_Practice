@@ -7,12 +7,23 @@ public class Bird : MonoBehaviour
     [Header("是否死亡")]
     public bool dead;
 
+    public GameObject goScore, goGM;
+
     /// <summary>
     /// 小雞跳躍功能
     /// </summary>
     private void Jump()
     {
+        // 如果 按下 左鍵
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            print("按下左鍵");
 
+            // 分數 顯示
+            // GM 顯示
+            goScore.SetActive(true);
+            goGM.SetActive(true);
+        }
     }
 
     /// <summary>
@@ -29,6 +40,11 @@ public class Bird : MonoBehaviour
     private void PassPipe()
     {
 
+    }
+
+    private void Update()
+    {
+        Jump();
     }
 
 }
