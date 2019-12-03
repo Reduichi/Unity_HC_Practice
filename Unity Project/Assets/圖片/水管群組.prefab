@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966095985610690058}
   - component: {fileID: 966095985610690059}
+  - component: {fileID: 9209280356531889153}
   m_Layer: 0
   m_Name: "04_\u6C34\u7BA1"
   m_TagString: Untagged
@@ -80,6 +81,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &9209280356531889153
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966095985610690061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.17999999, y: 0.32}
+      - {x: -0.17999999, y: -0.099999994}
+      - {x: -0.16, y: -0.32}
+      - {x: 0.16, y: -0.32}
+      - {x: 0.17999999, y: -0.099999994}
+      - {x: 0.17999999, y: 0.32}
 --- !u!1 &966095986052262802
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966095986469971303}
   - component: {fileID: 966095986469971300}
+  - component: {fileID: 8484662878607698473}
   m_Layer: 0
   m_Name: "04_\u6C34\u7BA1 (1)"
   m_TagString: Untagged
@@ -207,3 +240,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &8484662878607698473
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966095986469971302}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.17999999, y: 0.32}
+      - {x: -0.17999999, y: -0.099999994}
+      - {x: -0.16, y: -0.32}
+      - {x: 0.16, y: -0.32}
+      - {x: 0.17999999, y: -0.099999994}
+      - {x: 0.17999999, y: 0.32}

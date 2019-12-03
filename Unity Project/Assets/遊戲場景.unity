@@ -356,6 +356,7 @@ MonoBehaviour:
   score: 0
   scoreHeight: 0
   pipe: {fileID: 966095986052262802, guid: 41d9a015adaa26d49b8167086e3a6578, type: 3}
+  goUI: {fileID: 539482034}
 --- !u!4 &525294283
 Transform:
   m_ObjectHideFlags: 0
@@ -1189,7 +1190,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: aa16063ab4cca3d4b80e23751496e023, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1227,10 +1228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac148731a9405b4fa5b4367309c0249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump: 100
+  jump: 219
   dead: 0
   goScore: {fileID: 1601675387}
   goGM: {fileID: 525294281}
+  r2d: {fileID: 1702838018}
+  gm: {fileID: 525294282}
 --- !u!58 &1702838017
 CircleCollider2D:
   m_ObjectHideFlags: 0
