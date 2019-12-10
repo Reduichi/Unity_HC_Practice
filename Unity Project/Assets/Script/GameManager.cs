@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -73,6 +74,23 @@ public class GameManager : MonoBehaviour
         Ground.speed = 0;
     }
 
+    /// <summary>
+    /// 重新遊戲
+    /// </summary>
+    public void Replay()
+    {
+        // Application.LoadLevel("遊戲場景");  // 應用程式.載入關卡("關卡名稱") 舊版 API
+        SceneManager.LoadScene("遊戲場景");    // 場景管理.載入場景("場景名稱") 新版 API
+    }
+
+    /// <summary>
+    /// 離開遊戲
+    /// </summary>
+    public void Exit()
+    {
+        Application.Quit();                 // 應用程式.離開遊戲
+    }
+
     private void Start()
     {
         // SpawnPipe();
@@ -82,5 +100,6 @@ public class GameManager : MonoBehaviour
         // 取得最高分數
         scoreHeight = PlayerPrefs.GetInt("最高分數");
         textHeight.text = scoreHeight.ToString();  // 整數.轉字串
+        Ground.speed = 3f; //靜態欄位會保留上次的值，必須要重新設定
     }
 }

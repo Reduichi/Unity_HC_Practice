@@ -18,6 +18,7 @@ public class Ground : MonoBehaviour
         // Time.deltaTime 一幀的時間
     }
 
+
     private void Update()
     {
         Move();
