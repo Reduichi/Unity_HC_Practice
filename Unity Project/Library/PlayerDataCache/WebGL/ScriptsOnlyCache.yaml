@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - Pipe
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -590,4 +591,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - "Assets/\u904A\u6232\u5834\u666F.unity"
-  playerPath: C:/Users/appedu/Desktop/Reduichi/flybird
+  playerPath: C:/Users/Reduichi/Desktop/Github/Unity_HC_Practice/Unity Project/web
